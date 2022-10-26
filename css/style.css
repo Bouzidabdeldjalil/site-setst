@@ -48,3 +48,40 @@
     margin-right: 50px;
   }
 }
+.mobile-menu span {
+    background-color: #fff
+}
+.mobile-menu {
+    width: 20px;
+    height: 10px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.mobile-menu span {
+    width: 20px;
+    height: 3px;
+    display: block;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all .375s ease-in-out
+}
+.mobile-menu span+span {
+    width: 14px;
+    margin: 6px 0 0 6px
+}
+.mobile-menu.mobile span:first-child {
+    background-color: #8c94ba;
+    transform: rotate(45deg) translate(3px,4px);
+    transition: all .375s ease-in-out
+}
+
+.mobile-menu.mobile span:last-child {
+    width: 20px;
+    background-color: #8c94ba;
+    transform: rotate(-45deg) translate(2px,-2.5px);
+    transition: all .375s ease-in-out;
+    margin: 6px 0 0
+}
+
