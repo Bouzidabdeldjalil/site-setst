@@ -34,3 +34,25 @@ function animation(text,split){
     }, 50);
     
 }
+
+const menumobile = document.querySelector(".mobile-menu");
+const navbar = document.querySelector(".navbar");
+
+
+menumobile.addEventListener("click",()=>{
+if (menumobile.classList.contains('a')){
+    menumobile.classList.add('mobile');
+    menumobile.classList.remove('a');
+    navbar.classList.add('nav-mob');
+    navbar.classList.remove('h-nav');
+    navbar.classList.remove('hidden');
+
+
+
+}else{
+    menumobile.classList.remove('mobile');
+    menumobile.classList.add('a');
+    navbar.classList.remove('nav-mob');  
+    navbar.classList.add('h-nav');
+}
+})
